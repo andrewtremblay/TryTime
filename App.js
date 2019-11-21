@@ -1,8 +1,4 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
  * @flow
  */
 
@@ -12,102 +8,57 @@ import {
   StyleSheet,
   ScrollView,
   View,
+  TextInput,
   Text,
   StatusBar,
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => React$Node = () => {
+const App = () => {
   return (
-    <>
+    <View style={[styles.black, styles.fill]}>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <SafeAreaView style={styles.black}>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
+          style={styles.black}>
+            <Text style={styles.sectionTitle}>Action</Text>
+            <TextInput style={styles.sectionInput} multiline={true}/> 
+            <Text style={styles.sectionTitle}>Belief</Text>
+            <TextInput style={styles.sectionInput} multiline={true}/> 
+            <Text style={styles.sectionTitle}>Consequence</Text>
+            <TextInput style={styles.sectionInput} multiline={true}/> 
+            <Text style={styles.sectionTitle}>Dispute</Text>
+            <TextInput style={styles.sectionInput} multiline={true}/> 
+            <Text style={styles.sectionTitle}>Effective Emotion</Text>
+            <TextInput style={styles.sectionInput} multiline={true}/> 
         </ScrollView>
       </SafeAreaView>
-    </>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  black: {
+    backgroundColor: 'black',
   },
-  engine: {
+  fill: {
     position: 'absolute',
     right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+    height:'100%',
+    width:'100%'
   },
   sectionTitle: {
-    fontSize: 24,
+    color: 'white',
+    marginHorizontal: 5,
+    fontSize: 25,
+  },
+  sectionInput: {
+    fontSize: 15,
     fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
+    color: 'white',
+    backgroundColor: 'black',
+    marginVertical: 10,
+    marginHorizontal: 5,
   },
 });
 
