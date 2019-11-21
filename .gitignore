@@ -130,6 +130,8 @@ release/
 build/
 android/app/build/
 
+ios/build/
+
 # Local configuration file (sdk path, etc)
 local.properties
 
