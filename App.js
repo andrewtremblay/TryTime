@@ -21,7 +21,7 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.black}>
-            <Text style={styles.sectionTitle}>Action</Text>
+            <Text style={styles.sectionTitle}>Activating Event</Text>
             <TextInput style={styles.sectionInput} multiline={true}/> 
             <Text style={styles.sectionTitle}>Belief</Text>
             <TextInput style={styles.sectionInput} multiline={true}/> 
