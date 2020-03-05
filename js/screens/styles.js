@@ -9,6 +9,13 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     right: 0,
   },
+  quickflowButton: {
+    fontSize: 24,
+    backgroundColor: Colors.white,
+    position: 'absolute',
+    paddingRight: 12,
+    right: 0,
+  },
   body: {
     backgroundColor: Colors.white,
   },

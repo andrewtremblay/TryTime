@@ -4,12 +4,11 @@
 
 import React from 'react';
 import {ScrollView, View, Text, TouchableHighlight} from 'react-native';
+import {styles} from '../styles';
 
-import {styles} from './styles';
-
-export default class ScreenA extends React.Component<any> {
-  navigateToB = () => {
-    this.props.navigation.navigate('finish');
+export default class EstablishEmotion extends React.Component<any> {
+  navigateToA = () => {
+    this.props.navigation.navigate('ScreenA');
   };
 
   render() {
@@ -17,9 +16,9 @@ export default class ScreenA extends React.Component<any> {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={styles.scrollView}>
-        <TouchableHighlight onPress={this.navigateToB}>
+        <TouchableHighlight onPress={this.navigateToA}>
           <View style={styles.body}>
-            <Text>Register</Text>
+            <Text>Screen B</Text>
           </View>
         </TouchableHighlight>
       </ScrollView>
