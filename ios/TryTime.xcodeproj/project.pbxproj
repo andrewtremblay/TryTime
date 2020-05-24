@@ -54,6 +54,7 @@
 		177F282692F7D9EC0EA5E6A9 /* Pods-TryTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryTime.release.xcconfig"; path = "Target Support Files/Pods-TryTime/Pods-TryTime.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* TryTime-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TryTime-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* TryTime-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TryTime-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		313DC79D247B160700C5D3C8 /* AppCenter-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
 		4C12EBD5B1496D2212131D99 /* Pods-TryTime-TryTimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryTime-TryTimeTests.release.xcconfig"; path = "Target Support Files/Pods-TryTime-TryTimeTests/Pods-TryTime-TryTimeTests.release.xcconfig"; sourceTree = "<group>"; };
 		5150662FF85B20CB6F7CAACB /* Pods-TryTime-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryTime-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TryTime-tvOSTests/Pods-TryTime-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6BF90F62A2C193C5A6A26B23 /* Pods-TryTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryTime.debug.xcconfig"; path = "Target Support Files/Pods-TryTime/Pods-TryTime.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				313DC79D247B160700C5D3C8 /* AppCenter-Config.plist */,
 			);
 			name = TryTime;
 			sourceTree = "<group>";
@@ -194,7 +196,6 @@
 				EF54EA37CF639A9E162FFABC /* Pods-TryTime-tvOSTests.debug.xcconfig */,
 				5150662FF85B20CB6F7CAACB /* Pods-TryTime-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
