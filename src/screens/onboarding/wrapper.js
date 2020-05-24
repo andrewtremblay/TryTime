@@ -15,17 +15,11 @@ const routeOrder = [
   routes.DataPermission,
 ];
 
-const resetToScreen = (routeName) => ({
-  type: 'Navigation/RESET',
-  index: 0,
-  actions: [{type: 'Navigation/NAVIGATE', routeName}],
-});
-
 const commonScreen = (ScreenComponent) => {
   class Screen extends React.Component<any> {
     nextRoute = () => {
       const nextRouteIndex =
-        routeOrder.indexOf(this.props.navigation.state.routeName) + 1;
+        routeOrder.indexOf(this.props.route.name) + 1;
       return routeOrder.length > nextRouteIndex
         ? routeOrder[nextRouteIndex]
         : screenAfterOnboarding;
@@ -38,10 +32,10 @@ const commonScreen = (ScreenComponent) => {
           if (e) {
             console.error(e);
           }
-          this.props.navigation.navigate({routeName: nextRoute});
+          this.props.navigation.navigate(nextRoute);
         });
       } else {
-        this.props.navigation.navigate({routeName: nextRoute});
+        this.props.navigation.navigate(nextRoute);
       }
     };
     render() {
