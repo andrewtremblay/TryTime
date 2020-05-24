@@ -5,12 +5,13 @@
 import React from 'react';
 import {ScrollView, View, Text, TouchableHighlight} from 'react-native';
 import CommonOnboarding from './wrapper';
+import { Belief as pageData } from './onboardingContent';
 
 class BeliefScreen extends React.Component<any> {
   render() {
     return (
         <View>
-            <Text>BeliefScreen</Text>
+            <Text>{pageData.bodyText}</Text>
         </View>
     );
   }
