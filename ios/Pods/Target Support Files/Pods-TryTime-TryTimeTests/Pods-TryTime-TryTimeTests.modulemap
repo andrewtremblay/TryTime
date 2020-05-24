@@ -1,0 +1,6 @@
+module Pods_TryTime_TryTimeTests {
+  umbrella header "Pods-TryTime-TryTimeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

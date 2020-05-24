@@ -1,6 +1,6 @@
 {
   "name": "appcenter-crashes",
-  "version": "2.6.1",
+  "version": "3.0.2",
   "summary": "React Native plugin for AppCenter Crashes",
   "license": "MIT",
   "homepage": "https://github.com/Microsoft/appcenter-sdk-react-native/blob/master/appcenter-crashes/README.md",
@@ -27,5 +27,6 @@
     "React": [
 
     ]
-  }
+  },
+  "static_framework": true
 }

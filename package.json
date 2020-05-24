@@ -1,43 +1,56 @@
 {
-  "name": "REBTABCDE",
+  "name": "try-time",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "npx react-native run-android",
-    "ios": "npx react-native run-ios",
-    "pods": "cd ios && pod install && cd -",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@react-native-community/masked-view": "^0.1.5",
-    "appcenter": "2.6.1",
-    "appcenter-analytics": "2.6.1",
-    "appcenter-crashes": "2.6.1",
-    "react": "16.9.0",
-    "react-native": "0.61.5",
-    "react-native-gesture-handler": "^1.5.3",
-    "react-native-safe-area-context": "^0.6.2",
-    "react-native-safe-area-view": "^1.0.0",
-    "react-native-screens": "^2.0.0-alpha.23",
-    "react-native-svg": "^10.1.0",
-    "react-navigation": "^4.0.10",
-    "react-navigation-stack": "^2.0.12",
-    "realm": "^4.0.0-beta.0"
+    "@react-native-community/async-storage": "^1.10.3",
+    "@react-native-community/masked-view": "^0.1.10",
+    "appcenter": "^3.0.2",
+    "appcenter-analytics": "^3.0.2",
+    "appcenter-crashes": "^3.0.2",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-safe-area-context": "^2.0.0",
+    "react-native-screens": "^2.8.0",
+    "react-native-svg": "^12.1.0",
+    "react-navigation": "^4.3.9",
+    "react-navigation-stack": "^2.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
-    "@react-native-community/eslint-config": "^0.0.5",
+    "@react-native-community/eslint-config": "^1.0.0",
+    "@types/jest": "^24.0.24",
+    "@types/react-native": "^0.62.0",
+    "@types/react-test-renderer": "16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
     "babel-jest": "^24.9.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.5.1",
     "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.9.0",
-    "typescript": "^3.7.4"
+    "metro-react-native-babel-preset": "^0.58.0",
+    "metro-tsconfig-paths": "^1.0.3",
+    "prettier": "^2.0.4",
+    "react-test-renderer": "16.11.0",
+    "typescript": "^3.8.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
