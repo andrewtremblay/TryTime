@@ -1,4 +1,4 @@
-module Pods_TryTime {
+framework module Pods_TryTime {
   umbrella header "Pods-TryTime-umbrella.h"
 
   export *
