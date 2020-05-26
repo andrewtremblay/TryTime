@@ -88,17 +88,9 @@ target 'TryTime' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable these next few lines.
-  add_flipper_pods!
-  post_install do |installer|
-    flipper_post_install(installer)
-  end
+  # add_flipper_pods!
+  # post_install do |installer|
+  #   flipper_post_install(installer)
+  # end
 end
 
-target 'TryTime-tvOS' do
-  # Pods for TryTime-tvOS
-
-  target 'TryTime-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-end
