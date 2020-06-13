@@ -1,5 +1,6 @@
 import MainList from './MainList';
 import AppEntryPoint from './AppEntryPoint';
+import Settings from './Settings';
 
 import {
 StartScreen,
@@ -13,7 +14,7 @@ DataPermission,
 } from './onboarding';
 
 import {
-SelectEventTypeScreen,
+SelectEventType,
 CreateAsEmotionScreen,
 CreateAsActionScreen,
 CreateBeliefScreen,
@@ -25,6 +26,7 @@ FinalSummaryScreen,
   export default {
     AppEntryPoint,
     MainList,
+    Settings,
     // onboarding
     StartScreen,
     Action,
@@ -35,7 +37,7 @@ FinalSummaryScreen,
     AppIntro,
     DataPermission,
     // quickflow
-    SelectEventTypeScreen,
+    SelectEventType,
     CreateAsEmotionScreen,
     CreateAsActionScreen,
     CreateBeliefScreen,

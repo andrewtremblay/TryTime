@@ -11,6 +11,8 @@ function AppContainer() {
       <Stack.Navigator initialRouteName={routes.AppEntryPoint} headerMode="none">
         <Stack.Screen name={routes.AppEntryPoint} component={screens.AppEntryPoint} />
         <Stack.Screen name={routes.MainList} component={screens.MainList} />
+        <Stack.Screen name={routes.Settings} component={screens.Settings} />
+
         {/*  */}
         <Stack.Screen name={routes.StartScreen} component={screens.StartScreen} />
         <Stack.Screen name={routes.Action} component={screens.Action} />
@@ -21,7 +23,7 @@ function AppContainer() {
         <Stack.Screen name={routes.AppIntro} component={screens.AppIntro} />
         <Stack.Screen name={routes.DataPermission} component={screens.DataPermission} />
         {/*  */}
-        <Stack.Screen name={routes.SelectEventType} component={screens.SelectEventTypeScreen} />
+        <Stack.Screen name={routes.SelectEventType} component={screens.SelectEventType} />
         <Stack.Screen name={routes.CreateAsEmotionScreen} component={screens.CreateAsEmotionScreen} />
         <Stack.Screen name={routes.CreateAsActionScreen} component={screens.CreateAsActionScreen} />
         <Stack.Screen name={routes.CreateBeliefScreen} component={screens.CreateBeliefScreen} />

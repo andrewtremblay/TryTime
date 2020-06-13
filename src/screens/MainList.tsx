@@ -3,11 +3,12 @@
  */
 
 import React from 'react';
-import {Text, TouchableOpacity, SafeAreaView} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 
 import {styles} from '../Styles';
 import {FlatList} from 'react-native-gesture-handler';
 import routes from '../Routes';
+import {ColumnContainer} from '../components/AppComponents';
 
 type State = {
   loadedEvents: any[];
@@ -43,7 +44,7 @@ export default class MainList extends React.Component<any, State> {
 
   render() {
     return (
-      <SafeAreaView style={styles.fullSafeArea}>
+      <ColumnContainer>
         <FlatList
           style={styles.fullList}
           data={this.state.loadedEvents}
@@ -57,7 +58,7 @@ export default class MainList extends React.Component<any, State> {
           onPress={this.navigateToSettings}>
           <Text>settings</Text>
         </TouchableOpacity>
-      </SafeAreaView>
+      </ColumnContainer>
     );
   }
 }

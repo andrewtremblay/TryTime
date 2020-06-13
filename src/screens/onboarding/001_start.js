@@ -6,16 +6,16 @@ import React from 'react';
 import CommonOnboarding from './wrapper';
 import onboardingContent from './onboardingContent';
 
-import { OnboardingText, CenterContainer } from '../../components/AppComponents';
+import { OnboardingText, CenterContent } from '../../components/AppComponents';
 
 const {StartScreen: pageData} = onboardingContent;
 
 class StartScreen extends React.Component<any> {
   render() {
     return (
-        <CenterContainer>
+        <CenterContent>
           <OnboardingText>{pageData.bodyText}</OnboardingText>
-        </CenterContainer>
+        </CenterContent>
     );
   }
 }

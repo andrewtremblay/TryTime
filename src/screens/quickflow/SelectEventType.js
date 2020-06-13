@@ -1,24 +1,29 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
-import {CommonScreen} from '../../components';
+import {ColumnContainer} from '../../components/AppComponents';
 
-export default class Create extends React.Component<any> {
+export default class SelectEventType extends React.Component<any> {
   debugResetOnboarding = () => {
     AsyncStorage.removeItem('onboarding.isFinished');
   };
+  goBack = () => {
+    this.props.navigation.goBack()
+  }
 
   render() {
     return (
-      <CommonScreen>
-        <View>
+      <ColumnContainer>
           <Text>Create Generic</Text>
           <Button
             title="reset onboarding"
             onPress={this.debugResetOnboarding}
           />
-        </View>
-      </CommonScreen>
+          <Button
+            title="go back"
+            onPress={this.goBack}
+          />
+      </ColumnContainer>
     );
   }
 }

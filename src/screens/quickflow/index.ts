@@ -1,4 +1,4 @@
-import SelectEventTypeScreen from './SelectEventType';
+import SelectEventType from './SelectEventType';
 import CreateAsEmotionScreen from './DisputeBelief';
 import CreateAsActionScreen from './CreateAsAction';
 import CreateBeliefScreen from './CreateBelief';
@@ -7,7 +7,7 @@ import EstablishEmotionScreen from './EstablishEmotion';
 import FinalSummaryScreen from './FinalSummary';
 
 export {
-  SelectEventTypeScreen,
+  SelectEventType,
   CreateAsEmotionScreen,
   CreateAsActionScreen,
   CreateBeliefScreen,

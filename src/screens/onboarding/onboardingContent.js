@@ -7,9 +7,9 @@ const onboardingContent = {
     bodyText: 'but we can dispute\nthe beliefs that\ncause those feelings',
   },
   EffectiveEmotion: {
-    bodyText: 'and use the moment to\ncreate effective emotions',
+    bodyText: 'and use the moment to\ncreate effective behavior',
   },
   AppIntro: {bodyText: 'maybe this app\ncould help you try'},
-  DataPermission: {bodyText: 'your data is yours\nwe never share it'},
+  DataPermission: {bodyText: 'your data is yours\n& we never share it'},
 };
 export default onboardingContent;
