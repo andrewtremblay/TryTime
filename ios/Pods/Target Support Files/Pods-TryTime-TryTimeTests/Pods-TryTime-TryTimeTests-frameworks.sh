@@ -161,6 +161,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Folly/folly.framework"
@@ -191,6 +192,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/react-native-safe-area-context/react_native_safe_area_context.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Folly/folly.framework"
