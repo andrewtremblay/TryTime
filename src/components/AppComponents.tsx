@@ -24,7 +24,12 @@ var styles = StyleSheet.create({
         flexDirection: 'column',
         height: '100%',
         width: '100%',    
-    }
+    },
+    defaultText: {
+        fontFamily: 'WorkSans-Semibold',
+        fontSize: 16,
+        color: "#8690FF",
+    },
   });
   
 export const CenterContent = ({style, children, ...rest}) => 
@@ -46,7 +51,20 @@ export const CommonContainer = ({children}) =>
             />
     </View>
 
-export const ColumnContainer =  ({children, containerStyle}) =>
+type ColumnContainerProps = {
+    children: any;
+    containerStyle?: any; 
+}
+
+export const ColumnContainer =  ({children, containerStyle}:ColumnContainerProps) =>
     <CommonContainer>
         <View style={[styles.container, containerStyle]}>{children}</View>
     </CommonContainer>;
+
+
+type AppTextProps = {
+    children: any;
+    textStyle?: any; 
+}
+export const AppText = ({children, textStyle}: AppTextProps) => 
+    <Text style={[styles.defaultText, textStyle]}>{children}</Text>

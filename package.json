@@ -17,6 +17,7 @@
     "appcenter": "3.0.2",
     "appcenter-analytics": "3.0.2",
     "appcenter-crashes": "3.0.2",
+    "moment": "^2.27.0",
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-gesture-handler": "^1.6.1",
@@ -24,7 +25,8 @@
     "react-native-reanimated": "^1.9.0",
     "react-native-safe-area-context": "^2.0.0",
     "react-native-screens": "^2.8.0",
-    "react-native-svg": "^12.1.0"
+    "react-native-svg": "^12.1.0",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

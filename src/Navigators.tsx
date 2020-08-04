@@ -12,8 +12,7 @@ function AppContainer() {
         <Stack.Screen name={routes.AppEntryPoint} component={screens.AppEntryPoint} />
         <Stack.Screen name={routes.MainList} component={screens.MainList} />
         <Stack.Screen name={routes.Settings} component={screens.Settings} />
-
-        {/*  */}
+        {/* Onboarding  */}
         <Stack.Screen name={routes.StartScreen} component={screens.StartScreen} />
         <Stack.Screen name={routes.Action} component={screens.Action} />
         <Stack.Screen name={routes.Belief} component={screens.Belief} />
@@ -22,7 +21,7 @@ function AppContainer() {
         <Stack.Screen name={routes.EffectiveEmotion} component={screens.EffectiveEmotion} />
         <Stack.Screen name={routes.AppIntro} component={screens.AppIntro} />
         <Stack.Screen name={routes.DataPermission} component={screens.DataPermission} />
-        {/*  */}
+        {/* Event Creation */}
         <Stack.Screen name={routes.SelectEventType} component={screens.SelectEventType} />
         <Stack.Screen name={routes.CreateAsEmotionScreen} component={screens.CreateAsEmotionScreen} />
         <Stack.Screen name={routes.CreateAsActionScreen} component={screens.CreateAsActionScreen} />
