@@ -39,6 +39,7 @@
     "babel-jest": "^24.9.0",
     "eslint": "^6.5.1",
     "jest": "^24.9.0",
+    "logkitty": ">=0.7.1",
     "metro-react-native-babel-preset": "^0.58.0",
     "metro-tsconfig-paths": "^1.0.3",
     "prettier": "^2.0.4",
